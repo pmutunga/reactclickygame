@@ -3,42 +3,40 @@ import PictureCard from "./components/PictureCard";
 import Nav from"./components/Nav";
 import Container from"./components/Container";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
-import Hero from "./components/Hero"
-import friends from "./friends.json";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer"
+import pictures from "./pictures.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.pictures to the pictures json array
   state = {
-    friends
+    pictures
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+  removepicture = id => {
+    // Filter this.state.pictures for pictures with an id not equal to the id being removed
+    const pictures = this.state.pictures.filter(picture => picture.id !== id);
+    // Set this.state.pictures equal to the new pictures array
+    this.setState({ pictures });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.pictures and render a pictureCard component for each picture object
   render() {
     return (
       <Wrapper>
       <Nav></Nav>
       <Hero></Hero>
         <Container>
-        {this.state.friends.map(friend => (
+        {this.state.pictures.map(picture => (
           <PictureCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+            removepicture={this.removepicture}
+            id={picture.id}
+            key={picture.id}
+            image={picture.image}
           />
         ))}
         </Container>
+        <Footer></Footer>
       </Wrapper>
     );
   }
