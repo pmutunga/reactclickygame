@@ -3,8 +3,10 @@ import "./style.css";
 
 function Footer (props) {
   return (
-    
-    <footer className="footer clearfix">React Clicky Game</footer>
+    <div>
+    <p className="clearfix"></p>
+    <footer className="footer-game small">React Clicky Game</footer>
+    </div>
   );
 }
 

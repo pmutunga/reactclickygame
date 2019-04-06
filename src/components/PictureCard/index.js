@@ -1,13 +1,16 @@
 import React from "react";
 import "./style.css";
 
-function PictureCard(props) {
-  return (
-
-       
-        <img src={props.image} className="float-left img-thumbnail" alt={props.name}></img>
-
-  );
-}
+const PictureCard = props => (
+ 
+    <div className="img-container">
+      <img
+        src={props.image}
+        className="float-left img-thumbnail img-responsive"
+        alt={props.name}
+        onClick={() => props.clickPicture(props.id)}
+      />
+    </div>
+);
 
 export default PictureCard;
