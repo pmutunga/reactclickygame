@@ -16,8 +16,7 @@ class App extends Component {
     score: 0,
     topscore: 0,
     // clicked: false,
-    message: "Click an image to begin!",
-    reset: "false",
+    message: "Click an image to begin!"
   };
 
 
@@ -31,6 +30,7 @@ class App extends Component {
     });
   };
 
+  //handle Top Score
   handleTopScore = currentTopScore => {
     console.log(currentTopScore);
     if(currentTopScore>this.state.topscore){
@@ -41,13 +41,13 @@ class App extends Component {
   //handleClick
   handleClick = id => {
     // Filter this.state.pictures to get the id of the clicked picture
-    console.log(id);
+    // console.log(id);
    
     //check if already clicked
     if (this.state.clickedArray.includes(id)) {
       //handle lost round
 
-      console.log("this was clicked twice");
+      // console.log("this was clicked twice");
       this.handleReset();
     } else {
       // this.state.clickedArray.push(id); NOT GOOD!
