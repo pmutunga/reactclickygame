@@ -1,10 +1,15 @@
 .navbar {
     background-color: blueviolet;
     width: 100%;
+    color: azure;
+    font-size: 2rem;
 }
 
-.navbar-brand {
-    color: azure;
-    font-size: 3rem;
+.navbar-game {
+    font-size: 2rem;
     font-weight: 700;
+}
+
+.navbar-text {
+    font-weight: 400;
 }

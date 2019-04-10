@@ -52,4 +52,14 @@ img {
   margin-right: 15px;
   margin-bottom: 15px;
   border: #999 1px solid;
+  cursor: pointer;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+}
+
+.img-thumbnail:hover {
+  background-color: burlywood;
+  opacity: 0.5;
+  }
+.img-container:hover{
+  transform: scale(1.03);
 }

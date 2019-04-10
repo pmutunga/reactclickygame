@@ -1,0 +1,14 @@
+
+
+.footer-game {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    justify-content: baseline;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    padding-top: 20px;
+    margin-top: 180px;
+}
