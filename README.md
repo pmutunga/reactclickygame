@@ -22,3 +22,4 @@ This is a memory game built with React. I have broken down the application's UI 
 ## Demo
 The demo of the application can be found [here](https://arcane-woodland-70656.herokuapp.com/).
 
+If you have any questions about this, feel free to contact me.
