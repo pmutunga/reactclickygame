@@ -2,6 +2,10 @@
   "name": "reactclickygame",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "5.7.1",
+    "node": "9.5.0"
+  },
   "homepage": "https://pmutunga.github.io/reactclickygame",
   "dependencies": {
     "bootstrap": "^4.3.1",
