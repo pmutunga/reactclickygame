@@ -9,8 +9,8 @@ function Nav (props) {
     <span className="navbar-toggler-icon"></span>
   </button>
   <p><span className="navbar-text" id="user-message">
-  { props.message}
-  </span>Click an image to begin!</p>
+  { props.message} 
+  </span></p>
   <p>Score:  
     <span className="navbar-text" id="user-message"> { props.score || 0  }  </span>
         | Top Score:
